@@ -16,6 +16,7 @@
     "@heroicons/react": "^2.0.18",
     "@mui/material": "^5.13.6",
     "@phosphor-icons/react": "^2.0.10",
+    "@types/react-slick": "^0.23.11",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.5",
     "react-dom": "^18.2.0",
@@ -24,7 +25,9 @@
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.13.0",
     "react-router-hash-link": "^2.4.3",
-    "react-slideshow-image": "^4.3.0"
+    "react-slick": "^0.29.0",
+    "react-slideshow-image": "^4.3.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
