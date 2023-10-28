@@ -13,7 +13,7 @@ export const Header = () => {
 
   function changeLanguage() {
     setEnabled(!enabled)
-    navigate('/pt')
+    navigate('/')
   }
 
   return (
@@ -70,7 +70,7 @@ export const Header = () => {
               Home
             </NavLink>
             <NavLink
-              to="/services"
+              to="/"
               className={({ isActive }) =>
                 `hover:text-red-700 ${isActive ? "text-red-700 font-semibold" : "text-white"
                 }`
@@ -79,7 +79,7 @@ export const Header = () => {
               Services
             </NavLink>
             <NavLink
-              to="/projects"
+              to="/"
               className={({ isActive }) =>
                 `hover:text-red-700 ${isActive ? "text-red-700 font-semibold" : "text-white"
                 }`
@@ -88,7 +88,7 @@ export const Header = () => {
               Projects
             </NavLink>
             <NavLink
-              to="/websites"
+              to="/"
               className={({ isActive }) =>
                 `hover:text-red-700 ${isActive ? "text-red-700 font-semibold" : "text-white"
                 }`
@@ -97,7 +97,7 @@ export const Header = () => {
               About Us
             </NavLink>
             <NavLink
-              to="/websites"
+              to="/"
               className={({ isActive }) =>
                 `hover:text-red-700 ${isActive ? "text-red-700 font-semibold" : "text-white"
                 }`
