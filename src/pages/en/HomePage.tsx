@@ -1,21 +1,16 @@
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
-import { Briefcase, ChalkboardTeacher, ChartLineUp, Globe, TreeStructure } from '@phosphor-icons/react';
 import { Fade, Slide as SlideAwesome } from 'react-awesome-reveal';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { Header } from "../../components/en/Header"
-import Image1 from "../../assets/img/services/service-1.jpg"
-import Image2 from "../../assets/img/services/service-2.jpg"
-import Image3 from "../../assets/img/services/service-3.jpg"
-import Image4 from "../../assets/img/services/service-4.jpg"
-import Image5 from "../../assets/img/services/service-5.jpg"
 import image7 from "../../assets/img/how-we-work/smart.webp"
 import image8 from "../../assets/img/how-we-work/smarter.webp"
 import image9 from "../../assets/img/how-we-work/fast.webp"
 import { Footer } from '../../components/en/Footer';
+import { slideImages } from '../../data/services-data';
 
 const divStyle = {
   display: 'flex',
@@ -34,33 +29,6 @@ const settings = {
   autoplaySpeed: 5000
 };
 
-const slideImages = [
-  {
-    url: Image1,
-    caption: 'Online Learning, Tutoring and Creation',
-    icon: <ChalkboardTeacher color='#fffffF' size={200} />
-  },
-  {
-    url: Image2,
-    caption: 'General Consulting Service',
-    icon: <ChartLineUp color='#fffffF' size={200} />
-  },
-  {
-    url: Image3,
-    caption: 'Representation of International Partners',
-    icon: <Globe color='#fffffF' size={200} />
-  },
-  {
-    url: Image4,
-    caption: 'International Business Facilitation',
-    icon: <Briefcase color='#fffffF' size={200} />
-  },
-  {
-    url: Image5,
-    caption: 'Project Development and Management',
-    icon: <TreeStructure color='#fffffF' size={200} />
-  },
-];
 
 export const HomePage = () => {
 

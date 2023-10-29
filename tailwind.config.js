@@ -21,6 +21,7 @@ export default {
       backgroundImage: {
         'background1': "url('/src/assets/img/background-1.jpg')",
         'background2': "url('/src/assets/img/background-2.jpg')",
+        'background3': "url('/src/assets/img/background-3.jpg')",
       }
     },
   },
