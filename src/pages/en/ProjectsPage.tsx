@@ -10,7 +10,7 @@ export const ProjectsPage = () => {
         <div>
             <Header />
             <main className="overflow-x-hidden">
-                <section className="bg-background2 w-screen h-52 bg-cover">
+                <section className="bg-background1 w-screen h-52 bg-cover">
                     <div className="h-full w-full pb-5 flex flex-col items-center justify-end bg-gradient-to-tl from-app-blue-200/90 to-red-700/60">
                         <h1 className='text-4xl text-white font-semibold text-center mt-20'>
                             Our Projects
