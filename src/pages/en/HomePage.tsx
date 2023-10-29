@@ -177,14 +177,14 @@ export const HomePage = () => {
             <div className='h-60 w-60 shadow-lg shadow-red-700 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
               Partner 1
             </div>
-            <div className='h-60 w-60 shadow-lg shadow-red-700 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
-              Partner 1
+            <div className='h-60 w-60 shadow-lg shadow-app-blue-200 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+              Partner 2
             </div>
             <div className='h-60 w-60 shadow-lg shadow-red-700 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
-              Partner 1
+              Partner 3
             </div>
-            <div className='h-60 w-60 shadow-lg shadow-red-700 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
-              Partner 1
+            <div className='h-60 w-60 shadow-lg shadow-app-blue-200 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+              Partner 4
             </div>
           </div>
         </section>

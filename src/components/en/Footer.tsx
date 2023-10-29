@@ -31,7 +31,7 @@ export const Footer = () => {
                         </label>
                         <div className="relative">
                             <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16 text-slate-900" />
-                            <button className="btn btn-primary bg-app-blue-200 border-none hover:bg-app-blue-200/80 absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                            <button className="btn btn-primary bg-app-blue-200 border-app-blue-200 border-2 hover:bg-app-blue-200/80 absolute top-0 right-0 rounded-l-none">Subscribe</button>
                         </div>
                     </fieldset>
                 </form>
