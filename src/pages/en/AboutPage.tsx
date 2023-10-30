@@ -33,9 +33,11 @@ export const AboutPage = () => {
                     </section>
                     <section className='flex justify-around rounded-lg w-2/3 mx-auto py-10 mt-10 bg-white'>
                         <div className="text-center w-[45%]">
-                            <Eye />
-                            <h3>Our Vision</h3>
-                            <p>
+                            <div className="text-blue-800 mb-4">
+                                <Eye size={72} weight="bold" className="mx-auto" />
+                                <h3>Our Vision</h3>
+                            </div>
+                            <p className="text-sm">
                                 Our vision is to revolutionize business conceptualization through positive business
                                 solution and tailored edutech. As a trusted partner, we are committed to seamless
                                 global expansion, sustainable project development, and expert guidance. We also plan
@@ -44,16 +46,20 @@ export const AboutPage = () => {
                             </p>
                         </div>
                         <div className="text-center w-[45%]">
-                            <Eye />
-                            <h3>Core Values</h3>
-                            <p className="text-left">
-                                <ul>
-                                    <li>Excellence:;</li>
-                                    <li>Integrity: ;</li>
-                                    <li>Collaboration;</li>
-                                    <li>Innovation</li>
-                                </ul>
+                            <div className="text-blue-800 mb-4">
+                                <Eye size={72} weight="bold" className="mx-auto" />
+                                <h3>Core Values</h3>
+                            </div>
+                            <p>
+                                At NEFC Projects Limitada, we driven toward empowering the 
+                                youth and maximizing their potential: 
                             </p>
+                            <ul className="text-left ml-14 list-disc">
+                                    <li>Excellence;</li>
+                                    <li>Integrity;</li>
+                                    <li>Collaboration;</li>
+                                    <li>Innovation.</li>
+                                </ul>
                         </div>
                     </section>
                 </div>

@@ -112,6 +112,28 @@ export const HomePage = () => {
             tenetur assumenda non odio at, sequi vitae dolore. Minus quos quis perferendis quibusdam earum?
           </p>
         </section>
+        <section className='w-screen bg-background3 '>
+          <div className='bg-app-blue-200/30'>
+            <h1 className='text-4xl text-white font-semibold text-center pt-10'>
+              Why Us
+            </h1>
+            <hr className='h-2 w-10 bg-white mx-auto rounded-lg mt-2 border-none' />
+            <div className='flex justify-around mt-20 pb-10'>
+              <div className='h-60 w-60 shadow-lg shadow-red-700 glass text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+                Expert Solutions
+              </div>
+              <div className='h-60 w-60 shadow-lg shadow-app-blue-200 glass text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+                Global Connections
+              </div>
+              <div className='h-60 w-60 shadow-lg shadow-red-700 glass text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+                Holistic services
+              </div>
+              <div className='h-60 w-60 shadow-lg shadow-app-blue-200 glass text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+                Youth Empowerment
+              </div>
+            </div>
+          </div>
+        </section>
         <section className='w-screen bg-background2 bg-cover h-[calc(100vh-10rem)]'>
           <div className='bg-gradient-to-r from-app-blue-200/80 to-red-700/50 w-full h-full text-white p-1'>
             <Slider {...settings}>
