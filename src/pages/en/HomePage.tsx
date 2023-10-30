@@ -64,74 +64,88 @@ export const HomePage = () => {
           </div>
         </section>
         <section className='w-screen pt-32 pb-16'>
-          <h1 className='text-4xl text-app-blue-200 font-semibold text-center'>
-            How We Work
-          </h1>
-          <hr className='h-2 w-10 bg-app-blue-200 mx-auto rounded-lg mt-2' />
-          <div className='flex shadow-lg shadow-red-700 w-2/3 mx-auto mt-10 h-60'>
-            <div className='w-2/5 flex'>
-              <img src={image7} alt="" className='h-40' />
-              <img src={image8} alt="" className='h-36 relative top-20 -left-16' />
+          <SlideAwesome direction='up' duration={1000}>
+            <h1 className='text-4xl text-app-blue-200 font-semibold text-center'>
+              How We Work
+            </h1>
+            <hr className='h-2 w-10 bg-app-blue-200 mx-auto rounded-lg mt-2' />
+          </SlideAwesome>
+          <SlideAwesome direction='left'>
+            <div className='flex shadow-lg shadow-red-700 w-2/3 mx-auto mt-10 h-60'>
+              <div className='w-2/5 flex'>
+                <img src={image7} alt="" className='h-40' />
+                <img src={image8} alt="" className='h-36 relative top-20 -left-16' />
+              </div>
+              <div className='w-3/5 pt-5 px-3'>
+                <h2 className='text-2xl text-app-blue-200 font-semibold mb-6'>
+                  Smart
+                </h2>
+                <p className='text-slate-800'>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse provident possimus perferendis in, vel et alias praesentium quaerat,
+                  eius dignissimos facilis autem corporis, nesciunt vero vitae. Quisquam odit natus quas!
+                </p>
+              </div>
             </div>
-            <div className='w-3/5 pt-5 px-3'>
-              <h2 className='text-2xl text-app-blue-200 font-semibold mb-6'>
-                Smart
-              </h2>
-              <p className='text-slate-800'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse provident possimus perferendis in, vel et alias praesentium quaerat,
-                eius dignissimos facilis autem corporis, nesciunt vero vitae. Quisquam odit natus quas!
-              </p>
+          </SlideAwesome>
+          <SlideAwesome direction='left'>
+            <div className='flex flex-row-reverse shadow-lg shadow-red-700 w-2/3 mx-auto mt-10 h-60'>
+              <div className='w-2/5 flex'>
+                <img src={image9} alt="" className='h-full ml-auto' />
+              </div>
+              <div className='w-3/5 pt-5 pl-20'>
+                <h2 className='text-2xl text-app-blue-200 font-semibold mb-6'>
+                  Fast
+                </h2>
+                <p className='text-slate-800'>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse provident possimus perferendis in, vel et alias praesentium quaerat,
+                  eius dignissimos facilis autem corporis, nesciunt vero vitae. Quisquam odit natus quas!
+                </p>
+              </div>
             </div>
-          </div>
-          <div className='flex flex-row-reverse shadow-lg shadow-red-700 w-2/3 mx-auto mt-10 h-60'>
-            <div className='w-2/5 flex'>
-              <img src={image9} alt="" className='h-full ml-auto' />
-            </div>
-            <div className='w-3/5 pt-5 pl-20'>
-              <h2 className='text-2xl text-app-blue-200 font-semibold mb-6'>
-                Fast
-              </h2>
-              <p className='text-slate-800'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse provident possimus perferendis in, vel et alias praesentium quaerat,
-                eius dignissimos facilis autem corporis, nesciunt vero vitae. Quisquam odit natus quas!
-              </p>
-            </div>
-          </div>
+          </SlideAwesome>
         </section>
         <section className='w-screen bg-app-blue-100 h-[calc(100vh-10rem)] p-1'>
-          <h1 className='text-4xl text-app-blue-200 font-semibold text-center mt-20'>
-            What We Do
-          </h1>
-          <hr className='h-2 w-10 bg-app-blue-200 mx-auto rounded-lg mt-2 border-none' />
-          <p className='mt-10 text-slate-900 text-center w-2/3 mx-auto'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reiciendis inventore id eaque voluptatem ad quibusdam,
-            tenetur assumenda non odio at, sequi vitae dolore. Minus quos quis perferendis quibusdam earum?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reiciendis inventore id eaque voluptatem ad quibusdam,
-            tenetur assumenda non odio at, sequi vitae dolore. Minus quos quis perferendis quibusdam earum?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reiciendis inventore id eaque voluptatem ad quibusdam,
-            tenetur assumenda non odio at, sequi vitae dolore. Minus quos quis perferendis quibusdam earum?
-          </p>
+          <SlideAwesome direction='up'>
+            <h1 className='text-4xl text-app-blue-200 font-semibold text-center mt-20'>
+              What We Do
+            </h1>
+            <hr className='h-2 w-10 bg-app-blue-200 mx-auto rounded-lg mt-2 border-none' />
+          </SlideAwesome>
+          <Fade>
+            <p className='mt-10 text-slate-900 text-center w-2/3 mx-auto'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reiciendis inventore id eaque voluptatem ad quibusdam,
+              tenetur assumenda non odio at, sequi vitae dolore. Minus quos quis perferendis quibusdam earum?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reiciendis inventore id eaque voluptatem ad quibusdam,
+              tenetur assumenda non odio at, sequi vitae dolore. Minus quos quis perferendis quibusdam earum?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reiciendis inventore id eaque voluptatem ad quibusdam,
+              tenetur assumenda non odio at, sequi vitae dolore. Minus quos quis perferendis quibusdam earum?
+            </p>
+          </Fade>
         </section>
         <section className='w-screen bg-background3 '>
           <div className='bg-app-blue-200/30'>
-            <h1 className='text-4xl text-white font-semibold text-center pt-10'>
-              Why Us
-            </h1>
-            <hr className='h-2 w-10 bg-white mx-auto rounded-lg mt-2 border-none' />
-            <div className='flex justify-around mt-20 pb-10'>
-              <div className='h-60 w-60 shadow-lg shadow-red-700 glass text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
-                Expert Solutions
-              </div>
-              <div className='h-60 w-60 shadow-lg shadow-app-blue-200 glass text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
-                Global Connections
-              </div>
-              <div className='h-60 w-60 shadow-lg shadow-red-700 glass text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
-                Holistic services
-              </div>
-              <div className='h-60 w-60 shadow-lg shadow-app-blue-200 glass text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
-                Youth Empowerment
-              </div>
-            </div>
+            <SlideAwesome direction='up'>
+              <h1 className='text-4xl text-white font-semibold text-center pt-10'>
+                Why Us
+              </h1>
+              <hr className='h-2 w-10 bg-white mx-auto rounded-lg mt-2 border-none' />
+            </SlideAwesome>
+            <Fade cascade>
+              <ul className='flex justify-around mt-20 pb-10'>
+                <li className='h-60 w-60 shadow-lg shadow-red-700 glass text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+                  Expert Solutions
+                </li>
+                <li className='h-60 w-60 shadow-lg shadow-app-blue-200 glass text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+                  Global Connections
+                </li>
+                <li className='h-60 w-60 shadow-lg shadow-red-700 glass text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+                  Holistic services
+                </li>
+                <li className='h-60 w-60 shadow-lg shadow-app-blue-200 glass text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+                  Youth Empowerment
+                </li>
+              </ul>
+            </Fade>
           </div>
         </section>
         <section className='w-screen bg-background2 bg-cover h-[calc(100vh-10rem)]'>
@@ -159,24 +173,28 @@ export const HomePage = () => {
           </div>
         </section>
         <section className='w-screen bg-white h-[calc(100vh-10rem)] p-1 mb-20'>
-          <h1 className='text-4xl text-app-blue-200 font-semibold text-center mt-20'>
-            Our Partners
-          </h1>
-          <hr className='h-2 w-10 bg-app-blue-200 mx-auto rounded-lg mt-2 border-none' />
-          <div className='flex justify-around mt-20'>
-            <div className='h-60 w-60 shadow-lg shadow-red-700 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
-              Partner 1
-            </div>
-            <div className='h-60 w-60 shadow-lg shadow-app-blue-200 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
-              Partner 2
-            </div>
-            <div className='h-60 w-60 shadow-lg shadow-red-700 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
-              Partner 3
-            </div>
-            <div className='h-60 w-60 shadow-lg shadow-app-blue-200 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
-              Partner 4
-            </div>
-          </div>
+          <SlideAwesome direction='up'>
+            <h1 className='text-4xl text-app-blue-200 font-semibold text-center mt-20'>
+              Our Partners
+            </h1>
+            <hr className='h-2 w-10 bg-app-blue-200 mx-auto rounded-lg mt-2 border-none' />
+          </SlideAwesome>
+          <Fade cascade>
+            <ul className='flex justify-around mt-20'>
+              <li className='h-60 w-60 shadow-lg shadow-red-700 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+                Partner 1
+              </li>
+              <li className='h-60 w-60 shadow-lg shadow-app-blue-200 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+                Partner 2
+              </li>
+              <li className='h-60 w-60 shadow-lg shadow-red-700 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+                Partner 3
+              </li>
+              <li className='h-60 w-60 shadow-lg shadow-app-blue-200 bg-white text-app-blue-200 text-xl font-semibold flex items-center justify-center'>
+                Partner 4
+              </li>
+            </ul>
+          </Fade>
         </section>
       </main>
       <Footer />
