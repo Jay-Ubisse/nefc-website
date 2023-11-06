@@ -59,7 +59,7 @@ export const ProjectsPage = () => {
                         </div>
                     </Slide>
                     <Slide direction="right">
-                        <div className='flex flex-row-reverse shadow-lg shadow-app-blue-200 w-2/3 mx-auto glass mt-10 text-white'>
+                        <div className='flex flex-row-reverse shadow-lg shadow-red-700 w-2/3 mx-auto glass mt-10 text-white'>
                             <div className='w-2/5 p-5 pt-20'>
                                 <img src={newTechImage} alt="" className='' />
                             </div>
