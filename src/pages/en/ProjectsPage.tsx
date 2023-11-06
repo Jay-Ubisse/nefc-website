@@ -5,25 +5,32 @@ import newTechImage from "../../assets/img/projects/new-tech.png"
 import { Link } from "react-router-dom";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 import { Slide } from "react-awesome-reveal";
+import { useEffect } from "react";
 
 export const ProjectsPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div>
-            <Header />
             <main className="overflow-x-hidden">
-                <section className="bg-background1 w-screen h-52 bg-cover">
-                    <div className="h-full w-full pb-5 flex flex-col items-center justify-end bg-gradient-to-tl from-app-blue-200/90 to-red-700/60">
-                        <Slide direction="up">
-                            <h1 className='text-4xl text-white font-semibold text-center mt-20'>
-                                Our Projects
-                            </h1>
-                            <hr className='h-2 w-10 bg-white mx-auto rounded-lg mt-2 border-none' />
-                        </Slide>
+                <section className="bg-background1 w-screen h-72 bg-cover">
+                    <div className="h-full w-full pb-5 bg-gradient-to-l from-app-blue-200/90 to-red-700/80">
+                        <Header />
+                        <div className="flex flex-col items-center justify-end">
+                            <Slide direction="up">
+                                <h1 className='text-4xl text-white font-semibold text-center mt-20'>
+                                    Our Projects
+                                </h1>
+                                <hr className='h-2 w-10 bg-white mx-auto rounded-lg mt-2 border-none' />
+                            </Slide>
+                        </div>
                     </div>
                 </section>
-                <section className="pb-20">
+                <section className="p-1 pb-20 bg-gradient-to-r from-red-700 to-app-blue-200">
                     <Slide direction="left" delay={400}>
-                        <div className='flex shadow-lg shadow-red-700 w-2/3 mx-auto mt-10'>
+                        <div className='flex shadow-lg shadow-red-700 w-2/3 mx-auto mt-10 bg-white'>
                             <div className='w-2/5'>
                                 <img src={algorithmicsImage} alt="" className='p-5 pt-20' />
                             </div>
@@ -40,7 +47,7 @@ export const ProjectsPage = () => {
                                 </p>
                                 <div className="w-fit ml-auto">
                                     <Link
-                                        to="/"
+                                        to="https://sommerschield-maputo.alg.academy/en"
                                         target="_blank"
                                         className="btn bg-gradient-to-r border-none from-red-800 to-app-blue-200 hover:from-app-blue-200 hover:to-red-700 transition text-white my-5"
                                     >
@@ -52,7 +59,7 @@ export const ProjectsPage = () => {
                         </div>
                     </Slide>
                     <Slide direction="right">
-                        <div className='flex flex-row-reverse shadow-lg shadow-app-blue-200 w-2/3 mx-auto mt-10'>
+                        <div className='flex flex-row-reverse shadow-lg shadow-app-blue-200 w-2/3 mx-auto bg-white mt-10'>
                             <div className='w-2/5 p-5 pt-20'>
                                 <img src={newTechImage} alt="" className='' />
                             </div>
@@ -70,7 +77,7 @@ export const ProjectsPage = () => {
                                     learning process.
                                 </p>
                                 <Link
-                                    to="/"
+                                    to="#"
                                     target="_blank"
                                     className="btn bg-gradient-to-r border-none from-red-800 to-app-blue-200 hover:from-app-blue-200 hover:to-red-700 transition text-white my-5"
                                 >

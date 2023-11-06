@@ -18,15 +18,15 @@ export const Header = () => {
 
   return (
     <header
-      className="h-16 bg-gradient-to-r from-red-800 to-app-blue-200"
+      className="bg-transparent pr-7"
     >
       <section className="relative h-full flex justify-between items-center laptop:flex-row w-full">
-        <div className="h-full">
+        <div className="mt-5 ml-5">
           <Link to="/" className="flex flex-row laptop:gap-1">
             <img
               src={logotipo}
               alt="logo"
-              className="h-16"
+              className="h-24"
             />
           </Link>
         </div>

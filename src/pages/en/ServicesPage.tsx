@@ -2,10 +2,14 @@ import { ArrowRight, X } from "@phosphor-icons/react";
 import { Footer } from "../../components/en/Footer"
 import { Header } from "../../components/en/Header"
 import { slideImages } from "../../data/services-data";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 
 export const ServicesPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     const [title, setTitle] = useState(slideImages[0].caption);
     const [content, setConent] = useState(slideImages[0].description);
     const [visibility, setVisibility] = useState(false);
@@ -22,16 +26,18 @@ export const ServicesPage = () => {
 
     return (
         <div>
-            <Header />
             <main className="overflow-x-hidden">
-                <section className="bg-background1 w-screen h-52 bg-cover">
-                    <div className="h-full w-full pb-5 flex flex-col items-center justify-end bg-gradient-to-tl from-app-blue-200/90 to-red-700/70">
-                        <Slide direction="up">
-                            <h1 className='text-4xl text-white font-semibold text-center mt-20'>
-                                Our Services
-                            </h1>
-                            <hr className='h-2 w-10 bg-white mx-auto rounded-lg mt-2 border-none' />
-                        </Slide>
+                <section className="bg-background1 w-screen h-72 bg-cover">
+                    <div className="h-full w-full pb-5 bg-gradient-to-tl from-app-blue-200/90 to-red-700/70">
+                        <Header />
+                        <div className="flex flex-col items-center justify-end">
+                            <Slide direction="up">
+                                <h1 className='text-4xl text-white font-semibold text-center mt-20'>
+                                    Our Services
+                                </h1>
+                                <hr className='h-2 w-10 bg-white mx-auto rounded-lg mt-2 border-none' />
+                            </Slide>
+                        </div>
                     </div>
                 </section>
                 <section className="bg-background3 bg-cover">
