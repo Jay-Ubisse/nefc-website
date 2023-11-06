@@ -30,16 +30,16 @@ export const ProjectsPage = () => {
                 </section>
                 <section className="p-1 pb-20 bg-gradient-to-r from-red-700 to-app-blue-200">
                     <Slide direction="left" delay={400}>
-                        <div className='flex shadow-lg shadow-red-700 w-2/3 mx-auto mt-10 bg-white'>
+                        <div className='flex shadow-lg shadow-red-700 w-2/3 mx-auto mt-10 glass text-white'>
                             <div className='w-2/5'>
                                 <img src={algorithmicsImage} alt="" className='p-5 pt-20' />
                             </div>
                             <div className='w-3/5 pt-5 px-3 pr-20'>
-                                <h2 className='text-2xl text-app-blue-200 font-semibold mb-1'>
+                                <h2 className='text-2xl font-semibold mb-1'>
                                     Algorithmics
                                 </h2>
-                                <hr className='h-1 w-20 bg-red-700 rounded-lg mb-5 border-none' />
-                                <p className='text-slate-800'>
+                                <hr className='h-1 w-20 bg-white rounded-lg mb-5 border-none' />
+                                <p>
                                     We facilitate the learning of computer coding/programming for children
                                     from 6 to 17 years who are registered with Algorithmics International School
                                     of Programming. This program is available on a part-time basis and can be offered
@@ -59,16 +59,16 @@ export const ProjectsPage = () => {
                         </div>
                     </Slide>
                     <Slide direction="right">
-                        <div className='flex flex-row-reverse shadow-lg shadow-app-blue-200 w-2/3 mx-auto bg-white mt-10'>
+                        <div className='flex flex-row-reverse shadow-lg shadow-app-blue-200 w-2/3 mx-auto glass mt-10 text-white'>
                             <div className='w-2/5 p-5 pt-20'>
                                 <img src={newTechImage} alt="" className='' />
                             </div>
                             <div className='w-3/5 pt-5 pl-20'>
-                                <h2 className='text-2xl text-app-blue-200 font-semibold mb-1'>
+                                <h2 className='text-2xl font-semibold mb-1'>
                                     New Tech & Youth Entrepreneurship Hub
                                 </h2>
-                                <hr className='h-1 w-32 bg-red-700 rounded-lg mb-5 border-none' />
-                                <p className='text-slate-800'>
+                                <hr className='h-1 w-32 bg-white rounded-lg mb-5 border-none' />
+                                <p>
                                     We offer mentorship services to youth and adults interested in acquiring
                                     and developing skills in the fields of computer coding, 3D universe, basics
                                     of cybersecurity and other new technology and business entrepreneurship development.
