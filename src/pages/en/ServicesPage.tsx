@@ -12,11 +12,13 @@ export const ServicesPage = () => {
     
     const [title, setTitle] = useState(slideImages[0].caption);
     const [content, setConent] = useState(slideImages[0].description);
+    const [image, setImage] = useState(0);
     const [visibility, setVisibility] = useState(false);
 
     function displayCardContent(contentNumber: number) {
         setTitle(slideImages[contentNumber].caption);
         setConent(slideImages[contentNumber].description);
+        setImage(contentNumber);
         setVisibility(true);
     }
 
@@ -67,6 +69,25 @@ export const ServicesPage = () => {
                                     </div>
                                 </div>
                             </Fade>
+                            <Fade>
+                                <div className="card w-96 glass">
+                                    <figure><img src={slideImages[1].url} alt="car!" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title text-white">{slideImages[1].caption}</h2>
+                                        <div className="card-actions justify-end">
+                                            <button
+                                                onClick={() => displayCardContent(1)}
+                                                className="btn btn-primary bg-gradient-to-tr from-red-700 to-app-blue-200 border-none text-white"
+                                            >
+                                                <span>See more</span>
+                                                <span>
+                                                    <ArrowRight color="white" size={24} />
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Fade>
                             <Fade delay={100}>
                                 <div className="card w-96 glass">
                                     <figure><img src={slideImages[2].url} alt="car!" /></figure>
@@ -75,6 +96,25 @@ export const ServicesPage = () => {
                                         <div className="card-actions justify-end">
                                             <button
                                                 onClick={() => displayCardContent(2)}
+                                                className="btn btn-primary bg-gradient-to-tr from-red-700 to-app-blue-200 border-none text-white"
+                                            >
+                                                <span>See more</span>
+                                                <span>
+                                                    <ArrowRight color="white" size={24} />
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Fade>
+                            <Fade>
+                                <div className="card w-96 glass">
+                                    <figure><img src={slideImages[3].url} alt="car!" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title text-white">{slideImages[3].caption}</h2>
+                                        <div className="card-actions justify-end">
+                                            <button
+                                                onClick={() => displayCardContent(3)}
                                                 className="btn btn-primary bg-gradient-to-tr from-red-700 to-app-blue-200 border-none text-white"
                                             >
                                                 <span>See more</span>
@@ -105,15 +145,15 @@ export const ServicesPage = () => {
                                     </div>
                                 </div>
                             </Fade>
-                            <Fade>
+                            <Fade delay={200}>
                                 <div className="card w-96 glass">
-                                    <figure><img src={slideImages[3].url} alt="car!" /></figure>
+                                    <figure><img src={slideImages[5].url} alt="car!" /></figure>
                                     <div className="card-body">
-                                        <h2 className="card-title text-white">{slideImages[3].caption}</h2>
+                                        <h2 className="card-title text-white">{slideImages[5].caption}</h2>
                                         <div className="card-actions justify-end">
                                             <button
-                                                onClick={() => displayCardContent(3)}
-                                                className="btn btn-primary bg-gradient-to-tr from-red-700 to-app-blue-200 border-none text-white"
+                                                onClick={() => displayCardContent(5)}
+                                                className="btn btn-primary mt-10 bg-gradient-to-tr from-red-700 to-app-blue-200 border-none text-white"
                                             >
                                                 <span>See more</span>
                                                 <span>
@@ -124,15 +164,15 @@ export const ServicesPage = () => {
                                     </div>
                                 </div>
                             </Fade>
-                            <Fade>
+                            <Fade delay={200}>
                                 <div className="card w-96 glass">
-                                    <figure><img src={slideImages[1].url} alt="car!" /></figure>
+                                    <figure><img src={slideImages[6].url} alt="car!" /></figure>
                                     <div className="card-body">
-                                        <h2 className="card-title text-white">{slideImages[1].caption}</h2>
+                                        <h2 className="card-title text-white">{slideImages[6].caption}</h2>
                                         <div className="card-actions justify-end">
                                             <button
-                                                onClick={() => displayCardContent(1)}
-                                                className="btn btn-primary bg-gradient-to-tr from-red-700 to-app-blue-200 border-none text-white"
+                                                onClick={() => displayCardContent(6)}
+                                                className="btn btn-primary mt-10 bg-gradient-to-tr from-red-700 to-app-blue-200 border-none text-white"
                                             >
                                                 <span>See more</span>
                                                 <span>
@@ -143,12 +183,32 @@ export const ServicesPage = () => {
                                     </div>
                                 </div>
                             </Fade>
+                            <Fade delay={200}>
+                                <div className="card w-96 glass">
+                                    <figure><img src={slideImages[7].url} alt="car!" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title text-white">{slideImages[7].caption}</h2>
+                                        <div className="card-actions justify-end">
+                                            <button
+                                                onClick={() => displayCardContent(7)}
+                                                className="btn btn-primary mt-10 bg-gradient-to-tr from-red-700 to-app-blue-200 border-none text-white"
+                                            >
+                                                <span>See more</span>
+                                                <span>
+                                                    <ArrowRight color="white" size={24} />
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Fade>
+                            
                         </div>
                         <div className={`${visibility ? "block" : "hidden"
                             } w-screen h-screen fixed top-0 left-0 glass z-50 flex items-center justify-center`}>
                             <div className={`hero min-h-16 w-4/5 rounded-xl bg-app-blue-200 text-white relative`}>
                                 <div className="hero-content flex-col laptop:flex-row-reverse">
-                                    <img src={slideImages[1].url} className="max-w-sm rounded-lg shadow-2xl" />
+                                    <img src={slideImages[image].url} className="max-w-sm rounded-lg shadow-2xl" />
                                     <div>
                                         <h1 className="text-4xl font-bold mt-16">{title}</h1>
                                         <p className="py-6">{content}</p>
