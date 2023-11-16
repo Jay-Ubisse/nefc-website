@@ -1,6 +1,15 @@
 import { Footer } from "../../components/en/Footer";
 import { Header } from "../../components/en/Header"
 import logo from "../../assets/img/logo.jpg"
+import Colaborator1 from "../../assets/img/logos-and-colaborators/fred.jpeg"
+import Colaborator2 from "../../assets/img/logos-and-colaborators/cecilia.jpeg"
+import Colaborator3 from "../../assets/img/logos-and-colaborators/nadia.jpeg"
+import Colaborator4 from "../../assets/img/logos-and-colaborators/vania.jpeg"
+import Colaborator5 from "../../assets/img/logos-and-colaborators/elidio.jpeg"
+import Colaborator6 from "../../assets/img/logos-and-colaborators/neil.jpeg"
+import Colaborator7 from "../../assets/img/logos-and-colaborators/gualimbo.jpeg"
+import Colaborator8 from "../../assets/img/logos-and-colaborators/mitchel.jpeg"
+import Colaborator9 from "../../assets/img/logos-and-colaborators/marta.jpeg"
 import { CaretDoubleRight, Eye, Target } from "@phosphor-icons/react";
 import { Slide } from "react-awesome-reveal";
 import { useEffect } from "react";
@@ -125,12 +134,93 @@ export const AboutPage = () => {
                                 <hr className='h-2 w-20 mx-auto bg-white rounded-lg mb-5 border-none' />
                             </Slide>
                             <div className="grid grid-cols-3 justify-items-center gap-y-8 py-16">
-                                <div className="card w-80 glass">
-                                    <figure><img src={logo} alt="car!" /></figure>
+                                <div className="card w-80 h-[500px] glass">
+                                    <figure><img src={Colaborator1} className="w-full" alt="car!" /></figure>
                                     <div className="card-body">
                                         <h2 className="card-title text-white">Fred Nyembue</h2>
                                         <p className="text-slate-50">
                                             General Director
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="card w-80 h-[500px] glass">
+                                    <figure><img src={Colaborator2} alt="car!" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title text-white">Cecilia Chambe Xai Xai</h2>
+                                        <p className="text-slate-50">
+                                            Sales Manager
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="card w-80 h-[500px] glass">
+                                    <figure><img src={Colaborator3} alt="car!" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title text-white">Nadia Dias Simango</h2>
+                                        <p className="text-slate-50">
+                                            Executive Assistant
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="card w-80 h-[500px] glass">
+                                    <figure><img src={Colaborator4} alt="car!" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title text-white">Vania Macome</h2>
+                                        <p className="text-slate-50">
+                                            Algorithmics Teacher - Digital Literacy
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="card w-80 h-[500px] glass">
+                                    <figure><img src={Colaborator5} alt="car!" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title text-white">Elidio Massingue</h2>
+                                        <p className="text-slate-50">
+                                            Algorithmics Teacher - Python Star & Visual Programming
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="card w-80 h-[500px] glass">
+                                    <figure><img src={Colaborator6} alt="car!" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title text-white">Neil Lopes</h2>
+                                        <p className="text-slate-50">
+                                            Algorithmics Teacher - Website Creation & Digital Literacy
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="card w-80 h-[500px] glass">
+                                    <figure><img src={Colaborator7} alt="car!" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title text-white">Gualimbo Alene</h2>
+                                        <p className="text-slate-50">
+                                            Security Officer
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="card w-80 h-[500px] glass">
+                                    <figure><img src={Colaborator8} alt="car!" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title text-white">Mitchell Bimo</h2>
+                                        <p className="text-slate-50">
+                                            Security Officer
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="card w-80 h-[500px] glass">
+                                    <figure><img src={Colaborator9} alt="car!" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title text-white">Marta Nhamussua</h2>
+                                        <p className="text-slate-50">
+                                            Housekeeper
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="card w-80 glass">
+                                    <figure><img src={logo} alt="car!" /></figure>
+                                    <div className="card-body">
+                                        <h2 className="card-title text-white">Joaquim Ubisse</h2>
+                                        <p className="text-slate-50">
+                                            Web Developer Consultant
                                         </p>
                                     </div>
                                 </div>
@@ -140,87 +230,6 @@ export const AboutPage = () => {
                                         <h2 className="card-title text-white">Luisa Mia</h2>
                                         <p className="text-slate-50">
                                             Executive Director (HR, Compliance & Marketing)
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="card w-80 glass">
-                                    <figure><img src={logo} alt="car!" /></figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title text-white">Cecilia Chambe Xai Xai</h2>
-                                        <p className="text-slate-50">
-                                            Sales Manager
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="card w-80 glass">
-                                    <figure><img src={logo} alt="car!" /></figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title text-white">Nadia Dias Simango</h2>
-                                        <p className="text-slate-50">
-                                            Executive Assistant
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="card w-80 glass">
-                                    <figure><img src={logo} alt="car!" /></figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title text-white">Vania Macome</h2>
-                                        <p className="text-slate-50">
-                                            Algorithmics Teacher - Digital Literacy
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="card w-80 glass">
-                                    <figure><img src={logo} alt="car!" /></figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title text-white">Elidio Massingue</h2>
-                                        <p className="text-slate-50">
-                                            Algorithmics Teacher - Python Star & Visual Programming
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="card w-80 glass">
-                                    <figure><img src={logo} alt="car!" /></figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title text-white">Neil Lopes</h2>
-                                        <p className="text-slate-50">
-                                            Algorithmics Teacher - Website Creation & Digital Literacy
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="card w-80 glass">
-                                    <figure><img src={logo} alt="car!" /></figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title text-white">Mauro Matusse</h2>
-                                        <p className="text-slate-50">
-                                            Web Developer Consultant
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="card w-80 glass">
-                                    <figure><img src={logo} alt="car!" /></figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title text-white">Gualimbo Alene</h2>
-                                        <p className="text-slate-50">
-                                            Security Officer
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="card w-80 glass">
-                                    <figure><img src={logo} alt="car!" /></figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title text-white">Mitchell Bimo</h2>
-                                        <p className="text-slate-50">
-                                            Security Officer
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="card w-80 glass">
-                                    <figure><img src={logo} alt="car!" /></figure>
-                                    <div className="card-body">
-                                        <h2 className="card-title text-white">Marta Nhamussua</h2>
-                                        <p className="text-slate-50">
-                                            Housekeeper
                                         </p>
                                     </div>
                                 </div>

@@ -4,14 +4,22 @@ import { Fade, Slide as SlideAwesome } from 'react-awesome-reveal';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import { Header } from "../../components/en/Header"
-import { Footer } from '../../components/en/Footer';
-import { slideImages } from '../../data/services-data';
 import { Disclosure } from '@headlessui/react';
 import { CaretDown } from '@phosphor-icons/react';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+
+import { Header } from "../../components/en/Header"
+import { Footer } from '../../components/en/Footer';
+import { slideImages } from '../../data/services-data';
+import pentagonLogo from '../../assets/img/logos-and-colaborators/pentagon.jpeg'
+import binarioLogo from '../../assets/img/logos-and-colaborators/Binario2.png'
+import fredzLogo from '../../assets/img/logos-and-colaborators/fredz.jpeg'
+import misoLogo from '../../assets/img/logos-and-colaborators/mis.png'
+import yoloLogo from '../../assets/img/logos-and-colaborators/yolo.jpeg'
+import wansatiLogo from '../../assets/img/logos-and-colaborators/wansati.jpeg'
+import bigCityLogo from '../../assets/img/logos-and-colaborators/big.jpeg'
+import statesLogo from '../../assets/img/logos-and-colaborators/states.jpeg'
 
 const divStyle = {
   display: 'flex',
@@ -308,43 +316,23 @@ export const HomePage = () => {
           <hr className='h-1 w-80 ml-5 bg-white rounded-lg mt-2 border-none' />
           <Fade cascade>
             <ul className='mt-20 grid grid-cols-4 gap-y-16 justify-items-center text-white text-center'>
-              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex items-center justify-center'>
-                <span className='font-semibold'>
-                  Pentagon Cyber Lda
-                </span>
-                <span className='text-sm'>
-                  (Mozambique)
-                </span>
+              <li className='w-60 rounded-md  text-xl flex-col flex'>
+                <img src={pentagonLogo} alt="" />
               </li>
-              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex items-center justify-center'>
-                <span className='font-semibold'>
-                  Binario, EI
-                </span>
-                <span className='text-sm'>
-                  (Mozambique)
-                </span>
+              <li className='w-60 rounded-md  text-xl flex-col flex'>
+                <img src={binarioLogo} alt="" />
               </li>
-              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex items-center justify-center'>
+              <li className='w-60 rounded-md bg-white h-fit text-xl flex-col flex'>
+                <img src={misoLogo} alt="" />
+              </li>
+              <li className='w-60 rounded-md  text-xl flex-col flex'>
+                <img src={wansatiLogo} alt="" />
+              </li>
+              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex justify-center items-center'>
                 <span className='font-semibold'>
                   Mabutana & Momade Serviços Lda
                 </span>
-                <span className='text-sm'>
-                  (Mozambique)
-                </span>
-              </li>
-              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex items-center justify-center'>
-                <span className='font-semibold'>
-                  Miso Global Trading Lda
-                </span>
-                <span className='text-sm'>
-                  (Mozambique)
-                </span>
-              </li>
-              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex items-center justify-center'>
-                <span className='font-semibold'>
-                  Wansati-Lab
-                </span>
-                <span className='text-sm'>
+                <span className='text-sm mt-10 font-semibold'>
                   (Mozambique)
                 </span>
               </li>
@@ -356,29 +344,14 @@ export const HomePage = () => {
           <hr className='h-1 w-80 ml-5 bg-white rounded-lg mt-2 border-none' />
           <Fade cascade>
             <ul className='mt-20 grid grid-cols-4 gap-y-16 justify-items-center text-white text-center'>
-              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex items-center justify-center'>
-                <span className='font-semibold'>
-                  Big City Building Cc
-                </span>
-                <span className='text-sm'>
-                  (Namibia)
-                </span>
+              <li className='w-60 rounded-md text-xl flex-col flex'>
+                <img src={bigCityLogo} alt="" />
               </li>
-              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex items-center justify-center'>
-                <span className='font-semibold'>
-                  Fred Investments Consultants Cc
-                </span>
-                <span className='text-sm'>
-                  (Namibia)
-                </span>
+              <li className='w-60 rounded-md text-xl flex-col flex'>
+                <img src={fredzLogo} alt="" />
               </li>
-              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex items-center justify-center'>
-                <span className='font-semibold'>
-                  54 states Investments Cc
-                </span>
-                <span className='text-sm'>
-                  (Namibia)
-                </span>
+              <li className='w-60 rounded-md text-xl flex-col flex'>
+                <img src={statesLogo} alt="" />
               </li>
             </ul>
           </Fade>
@@ -388,13 +361,11 @@ export const HomePage = () => {
           <hr className='h-1 w-80 ml-5 bg-white rounded-lg mt-2 border-none' />
           <Fade cascade>
             <ul className='mt-20 grid grid-cols-4 gap-y-16 justify-items-center text-white text-center'>
-              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex items-center justify-center'>
-                <span className='font-semibold'>
-                  Pentagon Cyber Inc
-                </span>
-                <span className='text-sm'>
-                  (USA)
-                </span>
+              <li className='w-60 rounded-md text-xl flex-col flex'>
+                <img src={pentagonLogo} alt="" />
+              </li>
+              <li className='w-60 rounded-md glass text-xl flex-col flex'>
+                <img src={yoloLogo} alt="" />
               </li>
             </ul>
           </Fade>
@@ -404,11 +375,11 @@ export const HomePage = () => {
           <hr className='h-1 w-80 ml-5 bg-white rounded-lg mt-2 border-none' />
           <Fade cascade>
             <ul className='mt-20 grid grid-cols-4 gap-y-16 justify-items-center text-white text-center'>
-              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex items-center justify-center'>
+              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex'>
                 <span className='font-semibold'>
                   Manpower Link Multinational
                 </span>
-                <span className='text-sm'>
+                <span className='text-sm mt-10 font-semibold'>
                   (Malawi)
                 </span>
               </li>
@@ -420,11 +391,11 @@ export const HomePage = () => {
           <hr className='h-1 w-80 ml-5 bg-white rounded-lg mt-2 border-none' />
           <Fade cascade>
             <ul className='mt-20 grid grid-cols-4 gap-y-16 justify-items-center text-white text-center'>
-              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex items-center justify-center'>
+              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex'>
                 <span className='font-semibold'>
                   SIFA Enterprises Limited
                 </span>
-                <span className='text-sm'>
+                <span className='text-sm mt-10 font-semibold'>
                   (Mauritius)
                 </span>
               </li>
@@ -436,11 +407,11 @@ export const HomePage = () => {
           <hr className='h-1 w-80 ml-5 bg-white rounded-lg mt-2 border-none' />
           <Fade cascade>
             <ul className='mt-20 grid grid-cols-4 gap-y-16 justify-items-center text-white text-center'>
-              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex items-center justify-center'>
+              <li className='h-60 w-60 rounded-md glass text-xl flex-col flex'>
                 <span className='font-semibold'>
                   Tanganyika Mining Company Sarl
                 </span>
-                <span className='text-sm'>
+                <span className='text-sm mt-10 font-semibold'>
                   (DRC)
                 </span>
               </li>
@@ -452,11 +423,11 @@ export const HomePage = () => {
           <hr className='h-1 w-80 ml-5 bg-white rounded-lg mt-2 border-none' />
           <Fade cascade>
             <ul className='mt-20 grid grid-cols-4 gap-y-16 justify-items-center text-white text-center'>
-              <li className='h-60 w-60 rounded-md glass text-xl flex flex-col items-center justify-center'>
+              <li className='h-60 w-60 rounded-md glass text-xl flex flex-col'>
                 <span className='font-semibold'>
                   Algorithmics Global FZE
                 </span>
-                <span className='text-sm'>
+                <span className='text-sm mt-10 font-semibold'>
                   (UAE)
                 </span>
               </li>
